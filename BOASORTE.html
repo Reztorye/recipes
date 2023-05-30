@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>boa sorte</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #origem {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      font-size: 48px;
+    }
+
+    #destino {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="origem" onmouseover="moverElemento()">VITÓRIA</div>
+  <div id="destino"></div>
+
+  <script>
+    var contadorTentativas = 0;
+
+    function moverElemento() {
+      var elementoOrigem = document.getElementById("origem");
+      var elementoDestino = document.getElementById("destino");
+
+      if (contadorTentativas === 9) {
+        elementoDestino.innerHTML = "NUNCA JOGAREMOS TARKOV OU OUTLAST TRIALS ASSIM SR TARIK";
+      }
+
+      if (contadorTentativas >= 20) {
+        elementoDestino.innerHTML = "ACEITE QUE VOCÊ NÃO É CAPAZ!";
+      }
+
+      var janelaLargura = window.innerWidth - elementoOrigem.offsetWidth;
+      var janelaAltura = window.innerHeight - elementoOrigem.offsetHeight;
+
+      var posicaoEsquerda = Math.floor(Math.random() * janelaLargura);
+      var posicaoTopo = Math.floor(Math.random() * janelaAltura);
+
+      elementoOrigem.style.left = posicaoEsquerda + "px";
+      elementoOrigem.style.top = posicaoTopo + "px";
+
+      contadorTentativas++;
+    }
+  </script>
+
+</body>
+
+</html>

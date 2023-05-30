@@ -1,0 +1,183 @@
+body {
+  background-color: #0e475d;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff8d9;
+  font-family: "Lemon", cursive;
+  margin: 0px;
+
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #0e475d;
+  padding: 10px;
+  background-color: #fff8d9;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.header > h1 {
+  position: absolute;
+}
+.header > a {
+  margin-top: 30px;
+  margin-left: 1200px;
+}
+
+.container-recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ingredientes {
+  display: grid;
+  background-color: white;
+  padding: 20px;
+  margin-left: 60px;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+}
+
+.preparo {
+  display: grid;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  margin-right: 60px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+}
+
+.ingredientes > h3,
+.preparo > h3 {
+  text-align: center;
+  background-color: #fff8d9;
+  padding: 10px;
+  justify-self: center;
+  border-radius: 4px;
+  color: #0e475d;
+  box-shadow: 0px 1px 4px rgb(0, 0, 0.3);
+}
+
+#bottom:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-recipe {
+  margin-top: 30px;
+}
+
+.box-info {
+  margin: 30px;
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff8d9;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid #fff8d9;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.separador {
+  border-right: 2px solid #fff8d9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.recipe h2 {
+  text-align: center;
+  background-color: #fff8d9;
+  padding: 10px;
+  color: #0e475d;
+  border-radius: 4px;
+  box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ingredientes li {
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+.header a {
+  font-size: 22px;
+}
+
+.lista-preparo ul {
+  columns: 2;
+  column-gap: 20px;
+}
+
+.sub-preparo li {
+  line-height: 1.5;
+  padding: 3px;
+  margin-left: 10px;
+  list-style-type: decimal;
+}
+
+.recipe {
+  margin-bottom: 30px;
+}
+
+#bottom {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 20px;
+}
+
+img {
+  width: 24px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.pimenta,
+.iogurte,
+.limao,
+.alho,
+.sal,
+.pimenta {
+  display: flex;
+}
+
+img:hover {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
